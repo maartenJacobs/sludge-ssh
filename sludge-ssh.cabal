@@ -1,0 +1,21 @@
+name:                sludge-ssh
+version:             0.1.0.0
+synopsis:            SSh tarpit
+description:         Put some sludge up your SSH pipes!
+homepage:            https://github.com/maartenJacobs/sludge-ssh#readme
+license:             BSD3
+author:              Maarten Jacobs
+category:            Network utility
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable sludge-ssh
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:
+      base >= 4.7 && < 5
+    , network-run == 0.* && >= 0.2.2
+    , network == 3.* && >= 3.1.1.1
+    , random
